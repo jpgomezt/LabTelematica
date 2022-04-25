@@ -1,0 +1,11 @@
+sudo apt-get update
+
+sudo apt-get install \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+
+sudo docker volume rm $(sudo docker volume ls -q)
+
+
