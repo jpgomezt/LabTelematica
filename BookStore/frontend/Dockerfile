@@ -1,9 +1,9 @@
 #React build
-FROM node:14-alpine as react-build
+FROM node:14.19.1-alpine3.14 as react-build
 
 WORKDIR /usr/src/frontend
 
-COPY . ./
+COPY . .
 
 RUN npm install
 
